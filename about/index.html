@@ -595,6 +595,11 @@
 <!-- END LOCAL -->
 
     
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
 
     
       <script type="text/javascript">
@@ -604,14 +609,16 @@
             owner: 'liujibin',
             repo: 'liujibin.github.io',
             
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
+                redirect_protocol: 'http://liujibin.cn/',
             
-                client_secret: 'dec99537a9addfdb89e2692cb84539298325ac86',
             
-                client_id: '31fee0275dfcb1ef2418'
+                proxy_gateway: 'http://liujibin.cn/',
+            
+                client_id: '3d8f4da00cce8b9c2624'
             }});
         gitment.render('gitment-container');
       }
