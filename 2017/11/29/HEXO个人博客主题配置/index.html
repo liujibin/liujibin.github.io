@@ -106,7 +106,7 @@
 <meta property="og:image" content="http://yoursite.com/uploads/pic28.png">
 <meta property="og:image" content="http://yoursite.com/uploads/pic29.png">
 <meta property="og:image" content="http://yoursite.com/uploads/pic30.png">
-<meta property="og:updated_time" content="2017-12-12T07:48:59.054Z">
+<meta property="og:updated_time" content="2017-12-12T07:52:54.615Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO个人博客主题配置">
 <meta name="twitter:description" content="前言上一篇我们介绍了个人博客的搭建，考虑到篇幅太长不利于阅读，所以上一篇只完成了本地博客的搭建。本文将会介绍如何将本地博客同步到github以及绑定自己的域名，还会涉及一些基础配置、主题的修改、以及接入第三方的一些工具。">
@@ -457,15 +457,8 @@ gitmentbutton: 显示 Gitment 评论
 <img src="/uploads/pic24.png">  
 在下面再加一个分支  
 <img src="/uploads/pic22.png">  
-weuwiqyewuqi<br>   
->[gitment.swig](/uploads/gitment.swig)
-<br>
-
-
-
-
-
-  然后在主题下layout/_third-party/comments/index.swig文件中引入上面的文件：  
+在layout/_third-party/comments/目录下中添加文件gitment.swig（这里代码比较多，直接放链接下载文件<a href="/uploads/gitment.swig">gitment.swig</a>）。<br>  
+然后在主题下layout/_third-party/comments/index.swig文件中引入上面的文件：  
 <img src="/uploads/pic23.png">  
 在source/css/_common/components/third-party/目录下添加gitment.styl文件，设置button的样式：   
 <pre><code>
@@ -538,6 +531,10 @@ weuwiqyewuqi<br>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/16/2018年1月15日微信公开课pro（张小龙演讲）概要/" rel="prev" title="2018年1月15日微信公开课pro（张小龙演讲）概要">
+                2018年1月15日微信公开课pro（张小龙演讲）概要 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -624,7 +621,7 @@ weuwiqyewuqi<br>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -707,7 +704,7 @@ weuwiqyewuqi<br>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
