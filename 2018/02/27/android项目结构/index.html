@@ -79,19 +79,23 @@
 
 
 
-<meta name="description" content="前言">
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本文主要介绍Android studio工具里android工程的目录结构，各包、文档的作用，以及对比和Eclipse下android的工程目录结构的不同之处。">
 <meta name="keywords" content="基础知识,开发环境和配置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="android项目结构">
 <meta property="og:url" content="http://yoursite.com/2018/02/27/android项目结构/index.html">
 <meta property="og:site_name" content="刘继斌的博客">
-<meta property="og:description" content="前言">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本文主要介绍Android studio工具里android工程的目录结构，各包、文档的作用，以及对比和Eclipse下android的工程目录结构的不同之处。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/dtFmRqb.jpg">
-<meta property="og:updated_time" content="2018-02-27T09:35:53.034Z">
+<meta property="og:image" content="https://i.imgur.com/l0VhnxL.png">
+<meta property="og:image" content="https://i.imgur.com/RbEOaYY.png">
+<meta property="og:image" content="https://i.imgur.com/ke2lT2n.png">
+<meta property="og:image" content="https://i.imgur.com/nbLeTek.png">
+<meta property="og:updated_time" content="2018-02-28T09:35:03.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="android项目结构">
-<meta name="twitter:description" content="前言">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本文主要介绍Android studio工具里android工程的目录结构，各包、文档的作用，以及对比和Eclipse下android的工程目录结构的不同之处。">
 <meta name="twitter:image" content="https://i.imgur.com/dtFmRqb.jpg">
 
 
@@ -206,9 +210,9 @@
         <li class="menu-item menu-item-system">
           <a href="/system/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-android"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
             
-            知识体系
+            知识库
           </a>
         </li>
       
@@ -385,7 +389,40 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://i.imgur.com/dtFmRqb.jpg" width="100%"><br><a id="more"></a><br>未完待续…</p>
+        <p><img src="https://i.imgur.com/dtFmRqb.jpg" width="100%"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文主要介绍Android studio工具里android工程的目录结构，各包、文档的作用，以及对比和Eclipse下android的工程目录结构的不同之处。<br><a id="more"></a></p>
+<h2 id="不同IDE下android工程结构的对比"><a href="#不同IDE下android工程结构的对比" class="headerlink" title="不同IDE下android工程结构的对比"></a>不同IDE下android工程结构的对比</h2><h3 id="1、Eclipse下目录结构"><a href="#1、Eclipse下目录结构" class="headerlink" title="1、Eclipse下目录结构"></a>1、Eclipse下目录结构</h3><p><img src="https://i.imgur.com/l0VhnxL.png" alt=""><br> <strong>src</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里存放的是java代码。<br> <strong>gen</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里存放R.java文件，该文件自动标识了资源的索引。<br> <strong>Android 4.4W</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.4W是android平台版本，对应于API 20，该文件里面包含了android.jar文件，里面关联了Android的API。<br> <strong>Android Private Libraries</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里存放的是libs目录下jar包的映射，libs里的jar包引用视为私有引用，也就是第三方的库。添加jar包到libs里面会自动添加引用到Android Private Libraries里面，移除libs目录的jar包，这里的引用也会自动移除。<br> <strong>JRE System Library</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对应于JDK安装后的jre目录核心类库，表示系统类库文件，这里存放的jar包是java运行依赖的类库。<br> <strong>Android Dependencies</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该文件包含了工程引用的library。<br> <strong>assets</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放置原生文件，里面的文件会保留原有格式，文件袋额读取需要通过流。<br> <strong>bin</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放置工程编译后生成的文件，以及apk安装包。<br> <strong>libs</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放置引用的第三方库类文件。<br> <strong>res</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目的资源文件，里面按文件夹分类存放图片、布局等资源文件，会在R.java文件中自动生成索引。<br> <strong>AndroidManifest.xml</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android工程的主配置清单文件，配置了应用的基本信息，应用名称、icon、包名、版本、权限、组件、应用程序入口等，应用启动前先访问主配置清单文件。<br> <strong>proguard-project.txt 和 project.properties</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代码混淆文件。  </p>
+<h3 id="2、Android-Studio下目录结构"><a href="#2、Android-Studio下目录结构" class="headerlink" title="2、Android Studio下目录结构"></a>2、Android Studio下目录结构</h3><p><img src="https://i.imgur.com/RbEOaYY.png" alt=""><br> <strong>.gradle</strong><br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradle运行时自动生成的文件，不需要更改，也不需要纳入源码管理。<br> <strong>.idea</strong><br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDE运行时自动生成的文件，不需要更改，也不需要纳入源码管理。<br> <strong>app</strong><br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个module，每一个module都类似于Eclipse里面的一个Project，module结构和父项目结构类似。<br><img src="https://i.imgur.com/ke2lT2n.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>build</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编译时自动输出的文件，不需要更改，也不需要纳入源码管理。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>libs</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;app模块引用的第三方类库文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>src</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module源码所在目录。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>androidTest</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android Studio生成的测试模块。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>main</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module源码目录。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>test</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单元测试模块。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>.gitignore</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module中git管理源码的配置文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>app.iml</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module中IDE生成的文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>build.gradle</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module自动编译的配置文件。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>proguard-rules.pro</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代码混淆文件。<br> <strong>build</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编译时自动输出的文件，不需要更改，也不需要纳入源码管理。<br> <strong>gradle</strong><br><img src="https://i.imgur.com/nbLeTek.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradle目录下有个wrapper目录，里面有两个文件，里面是对gradle的配置信息。来看下gradle-wrapper.properties里面的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">distributionBase=GRADLE_USER_HOME  </span><br><span class="line">distributionPath=wrapper/dists  </span><br><span class="line">zipStoreBase=GRADLE_USER_HOME  </span><br><span class="line">zipStorePath=wrapper/dists  </span><br><span class="line">distributionUrl=https\://services.gradle.org/distributions/gradle-4.1-all.zip</span><br></pre></td></tr></table></figure></p>
+<p>可以看到里面声明了gradle的目录、下载路径、版本等信息。<br> <strong>.gitignore</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git对源码管理的配置文件，可以在里面添加你不希望纳入源码管理的文件。<br> <strong>build.gradle</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目的编译环境配置文件，gradle最主要的配置文件，这里是对整个project的配置，代码如下：</p>
+<pre><code>// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath &apos;com.android.tools.build:gradle:3.0.1&apos;
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+</code></pre><p>这里声明了仓库源，google()，还有个新的jcenter()，jcenter()可以理解成远程仓库，它兼容了maven中心仓库，性能更优；还声明了gradle的版本。<br> <strong>gradle.properties</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配置gradle运行环境的文件，配置gradle运行时的模式、运行时JVM虚拟机的大小等。<br> <strong>gradlew 和 gradlew.bat</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前者是linux下的shell脚本，后者是windows下的批处理命令，它们的作用是根据gradle-wrapper.properties文件中的distributionUrl下载对应版本的gradle。这样可以保证在不同的环境下构建都是用的统一的gradle版本，即使没有安装gradle，也会自动下载对应版本的gradle。<br> <strong>local.properties</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配置android NDK、SDK的地方，一般不纳入源码管理。<br> <strong>settings.gradle</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;声明当前项目包含哪些module，如果多个module，中间用“,”分开，代码如下：</p>
+<blockquote>
+<p>include ‘:app1’,’:app2’</p>
+</blockquote>
+<p> <strong>ProjectName.iml</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编译项目时自动生成的文件，文件名一般为“项目名.iml”，是Android Studio识别项目的配置文件，不纳入源码管理。<br> <strong>External Libraries</strong>  </p>
+<p>未完待续。。。<br>参考文献：<br><a href="http://blog.csdn.net/wx198210/article/details/50248915" target="_blank" rel="noopener">http://blog.csdn.net/wx198210/article/details/50248915</a><br><a href="http://blog.csdn.net/tpnndhqc/article/details/51172355" target="_blank" rel="noopener">http://blog.csdn.net/tpnndhqc/article/details/51172355</a><br><a href="http://blog.csdn.net/s13383754499/article/details/78286915" target="_blank" rel="noopener">http://blog.csdn.net/s13383754499/article/details/78286915</a></p>
 
       
     </div>
@@ -439,6 +476,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/28/android自定义工程模板/" rel="prev" title="android自定义工程模板">
+                android自定义工程模板 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -525,7 +566,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -547,7 +588,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -596,7 +637,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#不同IDE下android工程结构的对比"><span class="nav-number">1.</span> <span class="nav-text">不同IDE下android工程结构的对比</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、Eclipse下目录结构"><span class="nav-number">1.1.</span> <span class="nav-text">1、Eclipse下目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、Android-Studio下目录结构"><span class="nav-number">1.2.</span> <span class="nav-text">2、Android Studio下目录结构</span></a></li></ol></li></ol></div>
             
 
           </div>
