@@ -79,7 +79,7 @@
 
 
 
-<meta name="description" content="前言学而不思则罔，思而不学则殆。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
+<meta name="description" content="前言学而不思则罔，思而不学则殆。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp">
 <meta name="keywords" content="基础知识,开发环境和配置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="android开发环境搭建及配置">
@@ -99,10 +99,8 @@
 <meta property="og:image" content="https://i.imgur.com/b1eT8HX.png">
 <meta property="og:image" content="https://i.imgur.com/ngF0TcZ.png">
 <meta property="og:image" content="https://i.imgur.com/1K1TonA.png">
-<meta property="og:image" content="https://i.imgur.com/eceoKME.png">
 <meta property="og:image" content="https://i.imgur.com/itkiqFM.png">
-<meta property="og:image" content="https://i.imgur.com/D6DdASn.png">
-<meta property="og:updated_time" content="2018-03-04T03:41:12.525Z">
+<meta property="og:updated_time" content="2018-02-27T08:38:11.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="android开发环境搭建及配置">
 <meta name="twitter:description" content="前言学而不思则罔，思而不学则殆。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
@@ -401,10 +399,9 @@
       
         <p><img src="https://i.imgur.com/cQyeK8i.jpg" width="100%"></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="学而不思则罔，思而不学则殆。"><a href="#学而不思则罔，思而不学则殆。" class="headerlink" title="学而不思则罔，思而不学则殆。"></a>学而不思则罔，思而不学则殆。</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ————孔子<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每次学习知识都有种茫然无措、丢三落四的感觉，看到那么多的大牛整理的技术栈，我觉得是很有帮助的。从这篇文章开始整理自己的知识体系，以后学习起来有方向有目标，也方便回顾、方便把知识串联起来。加油ヾ(◍°∇°◍)ﾉﾞ！<br><a id="more"></a></p>
-<h2 id="Android-Studio介绍"><a href="#Android-Studio介绍" class="headerlink" title="Android Studio介绍"></a>Android Studio介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在很长的一段时间里，Google都是基于Eclipse来作为Android开发的IDE的，作为一个全能型的开发IDE，Eclipse绝对算得上是经典中的经典。不过Eclipse也有很多美中不足的地方，比如内存占用高、经常崩溃、开发界面不美观等，最重要的是，Android是作为插件的形式存在于Eclipse中的，随着Android日益强大，Eclipse越来越不能满足其需求，所以Google在2013年的I/O开发者大会上发布了Android Studio，最初版本的Android Studio只能算是一款玩玩的工具，非常不稳定，功能也不全面。但毕竟是Google一手打造的，Google正不遗余力的完善它，到目前为止，Android Studio已经比较健全，取代Eclipse被Google指定为官方开发工具。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们使用Android Studio来开发Android的理由？在2014年底，Google发布了Android Lollipop(Android 5.x)，这次不仅仅作为手机操作系统，同时融合了车载、可穿戴、TV等各方面的系统，因此，Google需要一个载体来推广它的各项服务。Android Studio在开发者层面，整合了它的云服务、车载、可穿戴、TV等各项功能，并且提供了强大的云支持，形成生态系统的整合。对于开发者的选择理由，因为它的UI设计更加即时、代码提示更加丰富、更加智能等，相比Eclipse更加专业。Android Studio是专业开发android的，Eclipse是全能的，论广度Eclipse更胜一筹，论专业性Eclipse就望尘莫及了。下面来看下Adroid Studio的安装配置。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里我们使用的开发工具选择android studio，首先我们需要下载好JDK和android studio，下载地址如下：<br>JDK：<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a><br>android studio：<a href="http://www.android-studio.org/" target="_blank" rel="noopener">http://www.android-studio.org/</a>  </p>
-<h3 id="JDK下载"><a href="#JDK下载" class="headerlink" title="JDK下载"></a>JDK下载</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击上面的JDK下载地址，进入oracle网站，在①处选中同意条款，然后根据对应的系统，选在下载哪个jdk。<br><img src="https://i.imgur.com/d56zIeC.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载完成后双击应用程序安装。<br><img src="https://i.imgur.com/9JO3uCH.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点“下一步”<br><img src="https://i.imgur.com/MZGZQUA.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配置安装路径，点击“下一步”<br><img src="https://i.imgur.com/9uRa7M2.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后等待安装完成就可以了，到这里，JDK我们就安装完成了。  </p>
-<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鼠标右击桌面上的“计算机”，点击“属性”，进入如下界面，然后点击“高级系统设置”。<br><img src="https://i.imgur.com/2xLM2ca.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击“环境变量”。<br><img src="https://i.imgur.com/VgoY3uF.png" alt=""><br>在“系统环境变量”里面找到如下三个环境变量，加入对应的值；如果找不到环境变量，就新建一个。 </p>
+<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里我们使用的开发工具选择android studio，首先我们需要下载好JDK和android studio，下载地址如下：<br>JDK：<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a><br>android studio：<a href="http://www.android-studio.org/" target="_blank" rel="noopener">http://www.android-studio.org/</a>  </p>
+<h3 id="1、JDK下载"><a href="#1、JDK下载" class="headerlink" title="1、JDK下载"></a>1、JDK下载</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击上面的JDK下载地址，进入oracle网站，在①处选中同意条款，然后根据对应的系统，选在下载哪个jdk。<br><img src="https://i.imgur.com/d56zIeC.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载完成后双击应用程序安装。<br><img src="https://i.imgur.com/9JO3uCH.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点“下一步”<br><img src="https://i.imgur.com/MZGZQUA.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配置安装路径，点击“下一步”<br><img src="https://i.imgur.com/9uRa7M2.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后等待安装完成就可以了，到这里，JDK我们就安装完成了。  </p>
+<h3 id="2、配置环境变量"><a href="#2、配置环境变量" class="headerlink" title="2、配置环境变量"></a>2、配置环境变量</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鼠标右击桌面上的“计算机”，点击“属性”，进入如下界面，然后点击“高级系统设置”。<br><img src="https://i.imgur.com/2xLM2ca.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击“环境变量”。<br><img src="https://i.imgur.com/VgoY3uF.png" alt=""><br>在“系统环境变量”里面找到如下三个环境变量，加入对应的值；如果找不到环境变量，就新建一个。 </p>
 <blockquote>
 <table>
 <thead>
@@ -430,8 +427,8 @@
 </table>
 </blockquote>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后我们打开cmd命令行，校验一下配置是否正确，命令行输入“java -version”，终端输出如下，说明配置无误。<br><img src="https://i.imgur.com/Pm5Es1k.png" alt="">  </p>
-<h3 id="Android-studio下载安装"><a href="#Android-studio下载安装" class="headerlink" title="Android studio下载安装"></a>Android studio下载安装</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打开上面给出的android studio下载地址，这里我们在安卓中文社区下载的，更新没有google官方快，但是省去翻墙，也不会晚太多，可以在国内下载使用。<br><img src="https://i.imgur.com/a7omQ3R.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择对应的平台版本下载下来，双击安装，一路点击“Next”可以安装完成。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里要注意，在第一次打开的时候可能会报一个错误“Unable to access Android SDK”，如下图。<br><img src="https://i.imgur.com/b1eT8HX.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是因为加载不到SDK的原因，这里我们直接点“Cancel”，继续后面的步骤，进去以后再加载SDK就可以了。  </p>
-<h3 id="加载SDK"><a href="#加载SDK" class="headerlink" title="加载SDK"></a>加载SDK</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安装完成进入android studio之后，在工具栏找到SDK Manager，点击进去，选择加载SDK。<br><img src="https://i.imgur.com/ngF0TcZ.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入SDK Manager之后，界面如下：<br><img src="https://i.imgur.com/1K1TonA.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在SDK Platforms标签下，可以看到各个版本的SDK库，选中右下角的“show Package Details”，可以看到更详细的分类。<br><img src="https://i.imgur.com/eceoKME.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里勾选需要的版本，“Android SDK Platform *<em>”一定要下载，“source for Android </em>”是查看源码，不下载的话，按Ctrl查看源码只能看到class文件，选择好点击右下角“Apply”按钮下载。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击切换到SDK Tools的标签下面，找到“Android SDK Build-Tools”，选在对应的版本下载下来。<br><img src="https://i.imgur.com/itkiqFM.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里要注意，如果需要在Android Studio中查看文档，需要把“Documentation for Android SDK”下载下来，如图：<br><img src="https://i.imgur.com/D6DdASn.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到此我们就完成了Android开发工具以及环境的最基本的配置。</p>
+<h3 id="3、Android-studio下载安装"><a href="#3、Android-studio下载安装" class="headerlink" title="3、Android studio下载安装"></a>3、Android studio下载安装</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打开上面给出的android studio下载地址，这里我们在安卓中文社区下载的，更新没有google官方快，但是省去翻墙，也不会晚太多，可以在国内下载使用。<br><img src="https://i.imgur.com/a7omQ3R.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择对应的平台版本下载下来，双击安装，一路点击“Next”可以安装完成。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里要注意，在第一次打开的时候可能会报一个错误“Unable to access Android SDK”，如下图。<br><img src="https://i.imgur.com/b1eT8HX.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是因为加载不到SDK的原因，这里我们直接点“Cancel”，继续后面的步骤，进去以后再加载SDK就可以了。  </p>
+<h3 id="4、加载SDK"><a href="#4、加载SDK" class="headerlink" title="4、加载SDK"></a>4、加载SDK</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安装完成进入android studio之后，在工具栏找到SDK Manager，点击进去，选择加载SDK。<br><img src="https://i.imgur.com/ngF0TcZ.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入SDK Manager之后，界面如下：<br><img src="https://i.imgur.com/1K1TonA.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在SDK Platforms标签下，可以看到各个版本的SDK库，选中右下角的“show Package Details”，可以看到更详细的分类，这里勾选需要的版本，点击右下角“Apply”按钮下载。下载完成之后，点击切换到SDK Tools的标签下面，找到“Android SDK Build-Tools”，选在对应的版本下载下来。<br><img src="https://i.imgur.com/itkiqFM.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到此我们就完成了Android开发工具以及环境的最基本的配置。</p>
 
       
     </div>
@@ -597,11 +594,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-<<<<<<< HEAD
                   <span class="site-state-item-count">8</span>
-=======
-                  <span class="site-state-item-count">6</span>
->>>>>>> f59f8c8b7f29f22ae4695d5545a7cc239aeea6b2
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -650,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#学而不思则罔，思而不学则殆。"><span class="nav-number">1.1.</span> <span class="nav-text">学而不思则罔，思而不学则殆。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android-Studio介绍"><span class="nav-number">2.</span> <span class="nav-text">Android Studio介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">3.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK下载"><span class="nav-number">3.1.</span> <span class="nav-text">JDK下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置环境变量"><span class="nav-number">3.2.</span> <span class="nav-text">配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-studio下载安装"><span class="nav-number">3.3.</span> <span class="nav-text">Android studio下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加载SDK"><span class="nav-number">3.4.</span> <span class="nav-text">加载SDK</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#学而不思则罔，思而不学则殆。"><span class="nav-number">1.1.</span> <span class="nav-text">学而不思则罔，思而不学则殆。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、准备工作"><span class="nav-number">2.</span> <span class="nav-text">一、准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、JDK下载"><span class="nav-number">2.1.</span> <span class="nav-text">1、JDK下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、配置环境变量"><span class="nav-number">2.2.</span> <span class="nav-text">2、配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、Android-studio下载安装"><span class="nav-number">2.3.</span> <span class="nav-text">3、Android studio下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、加载SDK"><span class="nav-number">2.4.</span> <span class="nav-text">4、加载SDK</span></a></li></ol></li></ol></div>
             
 
           </div>
