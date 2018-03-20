@@ -90,8 +90,13 @@
 <meta property="og:image" content="https://i.imgur.com/bXtQMgo.jpg">
 <meta property="og:image" content="https://i.imgur.com/mvCUIyA.png">
 <meta property="og:image" content="https://i.imgur.com/BUXshQL.png">
-<meta property="og:image" content="https://i.imgur.com/JlrAAtK.png">
-<meta property="og:updated_time" content="2018-03-19T05:07:00.330Z">
+<meta property="og:image" content="https://i.imgur.com/j6cw9g7.png">
+<meta property="og:image" content="https://i.imgur.com/u6883JZ.png">
+<meta property="og:image" content="https://i.imgur.com/6hOvKh6.png">
+<meta property="og:image" content="https://i.imgur.com/0fklRFK.png">
+<meta property="og:image" content="https://i.imgur.com/JRiDewn.png">
+<meta property="og:image" content="https://i.imgur.com/7PZl1Hr.png">
+<meta property="og:updated_time" content="2018-03-20T01:47:15.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter开发环境配置">
 <meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;“工欲善其事，必先利其器。”&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;">
@@ -367,20 +372,15 @@
 
       
         <p><img src="https://i.imgur.com/bXtQMgo.jpg" width="100%"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“工欲善其事，必先利其器。”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;————论语·魏灵公<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有一个好的工具，将可以使之后的工作事半功倍。我们学习每一门新的开发语言，必然先做初步的了解，然后着手准备工具，也就是配置安装开发环境。本文我们来看看Flutter对配置的要求，以及如何配置开发环境（基于Windows）。<br><a id="more"></a></p>
-<h3 id="对系统的要求"><a href="#对系统的要求" class="headerlink" title="对系统的要求"></a>对系统的要求</h3><p>要安装并运行 Flutter ，你的开发环境必须满足这些最低要求：  </p>
-<ul>
-<li><strong>操作系统：</strong>Windows 7 或者更高版本（64 位）。  </li>
-<li><strong>磁盘空间：</strong>400 MB（不包括 Android Studio 在内的磁盘空间）。  </li>
-<li><strong>工具：</strong> Flutter 依赖了你环境中可用的命令行工具（从 Windows 命令提示符选项中使用 Git）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以看出，Android Studio和git是需要下载的。首先我们来下载git,地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git for windows</a>。如果已经安装了，可以在windows下的cmd命令里输入git命令验证下是否已安装。<h3 id="获取Flutter-SDK"><a href="#获取Flutter-SDK" class="headerlink" title="获取Flutter SDK"></a>获取Flutter SDK</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了能够调用到Flutter的Sdk，需要用git去克隆仓库到本地，然后将Flutter库添加到环境变量。<h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一次安装时需要运行克隆仓库命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone -b beta https://github.com/flutter/flutter.git</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<h3 id="对系统的要求"><a href="#对系统的要求" class="headerlink" title="对系统的要求"></a>对系统的要求</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要安装并运行 Flutter ，你的开发环境必须满足这些最低要求：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>操作系统：</strong>Windows 7 或者更高版本（64 位）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>磁盘空间：</strong>400 MB（不包括 Android Studio 在内的磁盘空间）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>工具：</strong> Flutter 依赖了你环境中可用的命令行工具（从 Windows 命令提示符选项中使用 Git）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以看出，Android Studio和git是需要下载的。首先我们来下载git,地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git for windows</a>。如果已经安装了，可以在windows下的cmd命令里输入git命令验证下是否已安装。  </p>
+<h3 id="获取Flutter-SDK"><a href="#获取Flutter-SDK" class="headerlink" title="获取Flutter SDK"></a>获取Flutter SDK</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了能够调用到Flutter的Sdk，需要用git去克隆仓库到本地，然后将Flutter库添加到环境变量。</p>
+<h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一次安装时需要运行克隆仓库命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone -b beta https://github.com/flutter/flutter.git</span><br></pre></td></tr></table></figure></p>
 <h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了让应用可以调用到Flutter仓库，需要将它添加到环境变量:右击“计算机”-&gt;“属性”-&gt;“高级系统设置”-&gt;“环境变量”。在用户环境变量中找到path变量，在末尾加上Flutter的全路径“..\flutter\bin;”，然后重启下电脑。</p>
 <h4 id="运行flutter-doctor"><a href="#运行flutter-doctor" class="headerlink" title="运行flutter doctor"></a>运行flutter doctor</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在命令行运行以下命令，看是否需要安装任何依赖来完成安装。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ flutter doctor</span><br></pre></td></tr></table></figure></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该命令会检测环境和终端窗口生成报告，第一次运行这个命令的时候会下载自己的依赖库并编译，可能会有点慢，以后再次运行就会很快了。Datr SDK和Flutter捆绑在一起，不需要单独下载。（<strong><em>注意：该命令需要在系统命令行管理员权限下执行，在flutter的bin目录下执行，否则可能报错：没有权限/失败等。文件路径纯英文。</em></strong>）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有时候会出现链接失败，如图。会自动重连，可能等一会就能连上。<br><img src="https://i.imgur.com/mvCUIyA.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;执行完成之后如下。红框中X字开头的都是还缺少的依赖，此时在执行如下命令就可以加载了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ flutter</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://i.imgur.com/BUXshQL.png" alt=""></p>
-<h4 id="创建第一个项目"><a href="#创建第一个项目" class="headerlink" title="创建第一个项目"></a>创建第一个项目</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创建一个工作目录，在里面执行命令创建自己的第一个项目。</p>
-<pre><code>$ flutter create first_project
-</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里要注意，项目名称不要用驼峰命名，会报错，如下图。还是建议用上面的下划线格式连接的命名。<br><img src="https://i.imgur.com/JlrAAtK.png" alt=""></p>
+<p><img src="https://i.imgur.com/BUXshQL.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我这里开发工具用的Android Studio,这些报的缺失的依赖是在IntelliJ下面的，所以可以不去管它，如果需要添加依赖，只需要在IntelliJ的“File-&gt;Settings-&gt;Plugins”下面点击“Browse repositories…”，然后搜索“Flutter”加载插件，重启就可以了。Datr是和Flutter一起的，install了Flutter之后Dart插件也有了。<br><img src="https://i.imgur.com/j6cw9g7.png" alt=""><br><img src="https://i.imgur.com/u6883JZ.png" alt=""></p>
+<h3 id="创建第一个项目"><a href="#创建第一个项目" class="headerlink" title="创建第一个项目"></a>创建第一个项目</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配置好之后，在Android Studio中创建一个Flutter项目，“File-&gt;New-&gt;New Flutter Project…”，输入项目名称，点“NEXT”直到完成，项目创建好了之后如果有相关的提示需要update就点更新下。<br><img src="https://i.imgur.com/6hOvKh6.png" alt=""><br><img src="https://i.imgur.com/0fklRFK.png" alt=""><br><img src="https://i.imgur.com/JRiDewn.png" alt=""></p>
+<h3 id="小坑记"><a href="#小坑记" class="headerlink" title="小坑记"></a>小坑记</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里有个小插曲，分享下，要是有朋友遇到也好解决。我在创建好项目之后，点击运行，总是报一个错，如下图。<br><img src="https://i.imgur.com/7PZl1Hr.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照提示，执行了“flutter doctor –android-licenses”之后，也会报错，只有在android sdk目录下的licenses目录下执行才不会报错，但是也没有什么效果。后来仔细查了一下，发现android sdk目录下，build-tools目录的最后一个版本是26.0.2，platforms目录的最后一个版本是android-27，不是一个版本，可能没有对应的开源许可证号可用，于是将build-tools更新到27.xx.xx。然后运行项目还是报错，同样问题，删掉项目，重新建一个，运行就好了。可能问题比较低级，有时候脑子转不过来就一时难以发现o(╥﹏╥)o。</p>
 
       
     </div>
@@ -591,7 +591,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对系统的要求"><span class="nav-number">1.</span> <span class="nav-text">对系统的要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取Flutter-SDK"><span class="nav-number">2.</span> <span class="nav-text">获取Flutter SDK</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆仓库"><span class="nav-number">2.1.</span> <span class="nav-text">克隆仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加环境变量"><span class="nav-number">2.2.</span> <span class="nav-text">添加环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行flutter-doctor"><span class="nav-number">2.3.</span> <span class="nav-text">运行flutter doctor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建第一个项目"><span class="nav-number">2.4.</span> <span class="nav-text">创建第一个项目</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对系统的要求"><span class="nav-number">1.</span> <span class="nav-text">对系统的要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取Flutter-SDK"><span class="nav-number">2.</span> <span class="nav-text">获取Flutter SDK</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆仓库"><span class="nav-number">2.1.</span> <span class="nav-text">克隆仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加环境变量"><span class="nav-number">2.2.</span> <span class="nav-text">添加环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行flutter-doctor"><span class="nav-number">2.3.</span> <span class="nav-text">运行flutter doctor</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建第一个项目"><span class="nav-number">3.</span> <span class="nav-text">创建第一个项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小坑记"><span class="nav-number">4.</span> <span class="nav-text">小坑记</span></a></li></ol></div>
             
 
           </div>
