@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="IDE：Android Studio 工程主要文件&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;首先我们创建一个Flutter项目，项目名称单词首字母小写，下划线连接，例如first_project，而不是firstProje">
+<meta name="description" content="Flutter第一个应用">
 <meta name="keywords" content="Flutter,Flutter初识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flutter第一个应用">
 <meta property="og:url" content="http://yoursite.com/2018/03/20/Flutter第一个应用/index.html">
 <meta property="og:site_name" content="刘继斌的博客">
-<meta property="og:description" content="IDE：Android Studio 工程主要文件&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;首先我们创建一个Flutter项目，项目名称单词首字母小写，下划线连接，例如first_project，而不是firstProject或者FirstProject。创建项目完成后，如下图。今天我们主要会用到两个文件lib/main.dart、pubspec.yam">
+<meta property="og:description" content="Flutter第一个应用">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/wMWX56S.png">
 <meta property="og:image" content="https://i.imgur.com/uM4d7Sy.jpg">
@@ -99,10 +99,10 @@
 <meta property="og:image" content="https://i.imgur.com/WtOzJYH.jpg">
 <meta property="og:image" content="https://i.imgur.com/AWWSGHY.jpg">
 <meta property="og:image" content="https://i.imgur.com/Ny0kMrV.jpg">
-<meta property="og:updated_time" content="2018-03-21T09:42:39.992Z">
+<meta property="og:updated_time" content="2018-03-21T10:00:56.150Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter第一个应用">
-<meta name="twitter:description" content="IDE：Android Studio 工程主要文件&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;首先我们创建一个Flutter项目，项目名称单词首字母小写，下划线连接，例如first_project，而不是firstProject或者FirstProject。创建项目完成后，如下图。今天我们主要会用到两个文件lib/main.dart、pubspec.yam">
+<meta name="twitter:description" content="Flutter第一个应用">
 <meta name="twitter:image" content="https://i.imgur.com/wMWX56S.png">
 
 
@@ -396,8 +396,7 @@
       
 
       
-        <a id="more"></a>
-<p><strong>IDE：Android Studio</strong></p>
+        <p>Flutter第一个应用<br><a id="more"></a><br><strong>IDE：Android Studio</strong></p>
 <h2 id="工程主要文件"><a href="#工程主要文件" class="headerlink" title="工程主要文件"></a>工程主要文件</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先我们创建一个Flutter项目，项目名称单词首字母小写，下划线连接，例如first_project，而不是firstProject或者FirstProject。创建项目完成后，如下图。今天我们主要会用到两个文件lib/main.dart、pubspec.yaml。main.dart是main方法所在的文件，项目的入口，pubspec.yaml里面是对第三方Packages的引用依赖。<br><img src="https://i.imgur.com/wMWX56S.png" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目创建后，main.dart文件里面会默认生成一些构建简单页面的代码以及一些注释。连接上设备，run一下，可以看到效果，如下图。<br><img src="https://i.imgur.com/uM4d7Sy.jpg" width="40%"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这不是我们要的，我们只想要Hello World页面(#^.^#)。我们把main.dart里面的代码全部清掉，自己写一个Hello World页面，代码如下。导入flutter的material包，定义main方法并指定运行的入口页面类，定义一个入口页面类继承StatelessWidget，创建Material app，Material库的Scaffold提供了默认的导航栏appBar以及构成主页面的body属性。下面我们通过Widget来了解页面树结构的构建。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import &apos;package:flutter/material.dart&apos;;</span><br><span class="line"></span><br><span class="line">void main() =&gt; runApp(new MyApp());</span><br><span class="line"></span><br><span class="line">class MyApp extends StatelessWidget&#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    // TODO: implement build</span><br><span class="line">    return new MaterialApp(</span><br><span class="line">      title: &quot;demo app&quot;,</span><br><span class="line">      home: new Scaffold(</span><br><span class="line">        appBar: new AppBar(</span><br><span class="line">          title: new Text(&quot;Welcome to flutter&quot;),</span><br><span class="line">        ),</span><br><span class="line">        body: new Center(</span><br><span class="line">          child: new Text(&quot;Hello World&quot;),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>界面运行如下：<br><img src="https://i.imgur.com/HbpGKFJ.jpg" width="40%"></p>
 <h2 id="引用外部的Package"><a href="#引用外部的Package" class="headerlink" title="引用外部的Package"></a>引用外部的Package</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里以一个开源的软件包english_words来做个示例，这个包里包含了数千个常用的英文单词和一些功能。可以在<a href="https://pub.dartlang.org/flutter/" target="_blank" rel="noopener">pub.dartlang.org</a>上查到很多有用的开源工具包。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pubspec.yaml文件管理着Flutter应用程序的静态资源。在文件中添加english_words依赖如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">dependencies:</span><br><span class="line">  flutter:</span><br><span class="line">    sdk: flutter</span><br><span class="line"></span><br><span class="line">  cupertino_icons: ^0.1.0</span><br><span class="line">  english_words: ^3.1.0</span><br></pre></td></tr></table></figure></p>
