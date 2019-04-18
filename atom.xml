@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>刘继斌的博客</title>
+  
+  <subtitle>一行代码</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-07-13T03:42:15.730Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>刘继斌</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Activity启动模式</title>
+    <link href="http://yoursite.com/2018/07/10/activity-qi-dong-mo-shi/"/>
+    <id>http://yoursite.com/2018/07/10/activity-qi-dong-mo-shi/</id>
+    <published>2018-07-10T07:28:46.000Z</published>
+    <updated>2018-07-13T03:42:15.730Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/IHEV9tZ.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;一个Android应用里面通常都会包含多个Activity，这些Activity需要相互跳转，启动一个应用，就会创建一个与之对应的Task（任务栈），系统通过Task来管理这些Activity的实例，launchMode在Activity的跳转中扮演着非常重要的角色，它决定了Task中同一个Activity的实例是否重用、多个Task中同一个Activity的实例是否重用。下面来了解下Activity的四种launchMode。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="Android基础知识" scheme="http://yoursite.com/tags/Android%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="Activity系列" scheme="http://yoursite.com/tags/Activity%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React-Native安装配置运行打包</title>
+    <link href="http://yoursite.com/2018/06/28/react-native-an-zhuang-pei-zhi-yun-xing-da-bao/"/>
+    <id>http://yoursite.com/2018/06/28/react-native-an-zhuang-pei-zhi-yun-xing-da-bao/</id>
+    <published>2018-06-28T07:55:10.000Z</published>
+    <updated>2018-06-29T07:53:26.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Q860HnW.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div style=&quot;text-align:center; color:#aaaaaa; margin-top:2px;&quot;&gt;总裁吸螺镇楼&lt;/div&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;旨在整理最新的React-Native安装配置运行打包流程详细、过程中的注意点以及可能会遇到的坑，大牛请无视^_^。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ReactNative" scheme="http://yoursite.com/categories/ReactNative/"/>
+    
+    
+      <category term="ReactNative基础" scheme="http://yoursite.com/tags/ReactNative%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="baseWork" scheme="http://yoursite.com/tags/baseWork/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>View事件分发处理机制</title>
+    <link href="http://yoursite.com/2018/05/18/view-shi-jian-fen-fa-chu-li-ji-zhi/"/>
+    <id>http://yoursite.com/2018/05/18/view-shi-jian-fen-fa-chu-li-ji-zhi/</id>
+    <published>2018-05-18T02:37:51.000Z</published>
+    <updated>2018-06-11T08:54:47.205Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SDONBZ0.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;当Android手机屏幕监听到用户的动作，如何将事件传递给对应的控件呢？Android给我们提供了一套完善的事件传递、处理机制，可以很好地帮助开发者完成事件的分配和处理。要搞清楚触摸事件的分发机制，我们首先需要了解什么是触摸事件以及Android的View结构。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="View系列" scheme="http://yoursite.com/tags/View%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>View的绘制之测量（measure）</title>
+    <link href="http://yoursite.com/2018/05/10/view-de-hui-zhi-measure/"/>
+    <id>http://yoursite.com/2018/05/10/view-de-hui-zhi-measure/</id>
+    <published>2018-05-10T03:14:17.000Z</published>
+    <updated>2018-05-10T05:14:41.582Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/0hUdNSC.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="View系列" scheme="http://yoursite.com/tags/View%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>View坐标系</title>
+    <link href="http://yoursite.com/2018/05/04/view-zuo-biao-xi/"/>
+    <id>http://yoursite.com/2018/05/04/view-zuo-biao-xi/</id>
+    <published>2018-05-04T02:03:33.000Z</published>
+    <updated>2018-05-10T03:20:31.652Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pr9ij4G.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;“学而不思则罔，思而不学则殆”&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;————孔子&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Android View体系作为Android基础知识里面比较基础也比较核心的部分，其重要性不比四大组件差多少，从本篇开始将开始整理View的相关知识，形成系列。本篇主要就View的坐标做介绍，在后续的文章里还会涉及到事件的分发、View的绘制等内容。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="View系列" scheme="http://yoursite.com/tags/View%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android MVP模式学习</title>
+    <link href="http://yoursite.com/2018/04/26/android-mvp-mo-shi-xue-xi/"/>
+    <id>http://yoursite.com/2018/04/26/android-mvp-mo-shi-xue-xi/</id>
+    <published>2018-04-26T01:34:43.000Z</published>
+    <updated>2018-04-26T02:53:18.952Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/syCRVfC.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;MVP简介&quot;&gt;&lt;a href=&quot;#MVP简介&quot; class=&quot;headerlink&quot; title=&quot;MVP简介&quot;&gt;&lt;/a&gt;MVP简介&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;随着时代的发展，移动端UI越来越丰富、业务越来越复杂，用户对界面的美观、渲染的速度、数据读取的速度要求也越来越高。为了在保证拥有酷炫的UI、复杂的业务逻辑的条件下给用户更好的体验，需要对view、model、controller职责进行细分，让view专注于处理数据的可视化以及和用户的交互、让model专注于数据的处理。一种新的模式MVP（Model - View - Presenter）应运而生。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="架构设计" scheme="http://yoursite.com/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="MVP" scheme="http://yoursite.com/tags/MVP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flutter构建布局</title>
+    <link href="http://yoursite.com/2018/03/22/flutter-gou-jian-bu-ju/"/>
+    <id>http://yoursite.com/2018/03/22/flutter-gou-jian-bu-ju/</id>
+    <published>2018-03-22T02:15:33.000Z</published>
+    <updated>2018-04-17T07:41:01.286Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;待续……&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Flutter" scheme="http://yoursite.com/categories/Flutter/"/>
+    
+    
+      <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
+    
+      <category term="Flutter初识" scheme="http://yoursite.com/tags/Flutter%E5%88%9D%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flutter第一个应用</title>
+    <link href="http://yoursite.com/2018/03/20/flutter-di-yi-ge-ying-yong/"/>
+    <id>http://yoursite.com/2018/03/20/flutter-di-yi-ge-ying-yong/</id>
+    <published>2018-03-20T05:44:39.000Z</published>
+    <updated>2018-03-22T01:58:52.941Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这里是根据官方给的案例重新稍作整理，对基础工程以及界面交互等做一个初步的了解，具体知识点会在后面的文章做详细的介绍。通过本文可以了解到以下几点知识：  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建初始Flutter应用；  &lt;/li&gt;
+&lt;li&gt;使用外部的Package；  &lt;/li&gt;
+&lt;li&gt;使用有状态的Widget；  &lt;/li&gt;
+&lt;li&gt;创建ListView；  &lt;/li&gt;
+&lt;li&gt;添加可交互操作；  &lt;/li&gt;
+&lt;li&gt;跳转新页面。
+    
+    </summary>
+    
+      <category term="Flutter" scheme="http://yoursite.com/categories/Flutter/"/>
+    
+    
+      <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
+    
+      <category term="Flutter初识" scheme="http://yoursite.com/tags/Flutter%E5%88%9D%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flutter开发环境配置</title>
+    <link href="http://yoursite.com/2018/03/18/flutter-kai-fa-huan-jing-pei-zhi/"/>
+    <id>http://yoursite.com/2018/03/18/flutter-kai-fa-huan-jing-pei-zhi/</id>
+    <published>2018-03-18T03:39:12.000Z</published>
+    <updated>2018-03-20T02:02:38.620Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/bXtQMgo.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;“工欲善其事，必先利其器。”&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;————论语·魏灵公&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;有一个好的工具，将可以使之后的工作事半功倍。我们学习每一门新的开发语言，必然先做初步的了解，然后着手准备工具，也就是配置安装开发环境。本文我们来看看Flutter对配置的要求，以及如何配置开发环境（基于Windows）。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Flutter" scheme="http://yoursite.com/categories/Flutter/"/>
+    
+    
+      <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
+    
+      <category term="Flutter初识" scheme="http://yoursite.com/tags/Flutter%E5%88%9D%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flutter初识</title>
+    <link href="http://yoursite.com/2018/03/06/flutter-chu-shi/"/>
+    <id>http://yoursite.com/2018/03/06/flutter-chu-shi/</id>
+    <published>2018-03-06T03:38:58.000Z</published>
+    <updated>2018-03-20T02:34:45.286Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;偶然在大神的公众号上看到一篇文章&lt;a href=&quot;https://mp.weixin.qq.com/s/OPbTg_wtFEP7hQ9ADX5L7Q&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google 跨平台 UI 框架 - Flutter&lt;/a&gt;，介绍了google推出的一门新的跨平台移动框架，引发了我的兴趣，决定跟踪学习研究下。先来对这套框架做一个初步的了解。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Flutter" scheme="http://yoursite.com/categories/Flutter/"/>
+    
+    
+      <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
+    
+      <category term="Flutter初识" scheme="http://yoursite.com/tags/Flutter%E5%88%9D%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio模板</title>
+    <link href="http://yoursite.com/2018/02/28/android-zi-ding-yi-gong-cheng-mo-ban/"/>
+    <id>http://yoursite.com/2018/02/28/android-zi-ding-yi-gong-cheng-mo-ban/</id>
+    <published>2018-02-28T03:58:41.000Z</published>
+    <updated>2018-03-09T03:18:44.519Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kpfqJDI.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;“Stop Trying to Reinvent the Wheel”,不要重复造轮子，每个程序员入行就会被告知这条准则。技术更新非常快，我们需要不停地学习，不要把时间浪费在重复劳动上面。虽说未必能达到造轮子的水准，但是制作一些模板，尽可能地避免重复工作还是非常必要的。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="开发环境和配置" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>android项目结构</title>
+    <link href="http://yoursite.com/2018/02/27/android-xiang-mu-jie-gou/"/>
+    <id>http://yoursite.com/2018/02/27/android-xiang-mu-jie-gou/</id>
+    <published>2018-02-27T06:44:12.000Z</published>
+    <updated>2018-03-01T09:03:30.705Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/dtFmRqb.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本文主要介绍Android studio工具里android工程的目录结构，各包、文档的作用，以及对比和Eclipse下android的工程目录结构的不同之处。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="开发环境和配置" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>android开发环境搭建及配置</title>
+    <link href="http://yoursite.com/2018/02/27/android-kai-fa-huan-jing-da-jian-ji-pei-zhi/"/>
+    <id>http://yoursite.com/2018/02/27/android-kai-fa-huan-jing-da-jian-ji-pei-zhi/</id>
+    <published>2018-02-27T06:43:40.000Z</published>
+    <updated>2018-02-27T08:38:11.721Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/cQyeK8i.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;h3 id=&quot;学而不思则罔，思而不学则殆。&quot;&gt;&lt;a href=&quot;#学而不思则罔，思而不学则殆。&quot; class=&quot;headerlink&quot; title=&quot;学而不思则罔，思而不学则殆。&quot;&gt;&lt;/a&gt;学而不思则罔，思而不学则殆。&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  ————孔子&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;每次学习知识都有种茫然无措、丢三落四的感觉，看到那么多的大牛整理的技术栈，我觉得是很有帮助的。从这篇文章开始整理自己的知识体系，以后学习起来有方向有目标，也方便回顾、方便把知识串联起来。加油ヾ(◍°∇°◍)ﾉﾞ！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="开发环境和配置" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android历史版本介绍</title>
+    <link href="http://yoursite.com/2018/02/26/li-shi-ban-ben-jie-shao/"/>
+    <id>http://yoursite.com/2018/02/26/li-shi-ban-ben-jie-shao/</id>
+    <published>2018-02-26T09:42:36.000Z</published>
+    <updated>2018-05-10T03:21:40.583Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Android历史版本介绍。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="历史版本" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年1月15日微信公开课pro概要</title>
+    <link href="http://yoursite.com/2018/01/16/2018-nian-1-yue-15-ri-wei-xin-gong-kai-ke-pro-zhang-xiao-long-yan-jiang-gai-yao/"/>
+    <id>http://yoursite.com/2018/01/16/2018-nian-1-yue-15-ri-wei-xin-gong-kai-ke-pro-zhang-xiao-long-yan-jiang-gai-yao/</id>
+    <published>2018-01-16T03:35:19.000Z</published>
+    <updated>2018-04-27T09:48:43.626Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1，微信很克制，利益的堆砌会失去产品最本质的东西&quot;&gt;&lt;a href=&quot;#1，微信很克制，利益的堆砌会失去产品最本质的东西&quot; class=&quot;headerlink&quot; title=&quot;1，微信很克制，利益的堆砌会失去产品最本质的东西&quot;&gt;&lt;/a&gt;1，微信很克制，利益的堆砌会失去产品最本质的东西&lt;/h2&gt;&lt;p&gt;微信就是一个工具，我们想做最好的工具。微信对功能的取舍需要理性地判断对错，如果只从利益角度出发，可能会让我们的产品越走越偏，变成它里面知识一些利益的堆砌，这样我认为会失去产品更本质的东西。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="资讯" scheme="http://yoursite.com/categories/%E8%B5%84%E8%AE%AF/"/>
+    
+    
+      <category term="资讯" scheme="http://yoursite.com/tags/%E8%B5%84%E8%AE%AF/"/>
+    
+      <category term="微信" scheme="http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+      <category term="微信小程序" scheme="http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HEXO个人博客主题配置</title>
+    <link href="http://yoursite.com/2017/11/29/hexo-ge-ren-bo-ke-zhu-ti-pei-zhi/"/>
+    <id>http://yoursite.com/2017/11/29/hexo-ge-ren-bo-ke-zhu-ti-pei-zhi/</id>
+    <published>2017-11-29T08:21:46.000Z</published>
+    <updated>2019-04-18T07:07:09.756Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/uploads/head_theme/theme2.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;上一篇我们介绍了个人博客的搭建，考虑到篇幅太长不利于阅读，所以上一篇只完成了本地博客的搭建。本文将会介绍如何将本地博客同步到github以及绑定自己的域名，还会涉及一些基础配置、主题的修改、以及接入第三方的一些工具。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="搭建部署" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2/"/>
+    
+    
+      <category term="HEXO搭建博客" scheme="http://yoursite.com/tags/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HEXO个人博客搭建教程</title>
+    <link href="http://yoursite.com/2017/11/28/hexo-ge-ren-bo-ke-da-jian-jiao-cheng/"/>
+    <id>http://yoursite.com/2017/11/28/hexo-ge-ren-bo-ke-da-jian-jiao-cheng/</id>
+    <published>2017-11-28T07:34:11.000Z</published>
+    <updated>2019-04-18T07:07:16.007Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/uploads/head_theme/theme1.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;一直有搭建一个个人博客的想法，直到一次偶然看到大神分享的Hexo+Next+Github搭建个人博客的教程，心血来潮，搭建了一个自己的博客，圆了梦，也是新梦的启航。&lt;br&gt;搜查了无数资料，总算搭建完成，在此分享下搭建的过程，以便自己回顾，也方便想搭建自己博客的童鞋。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="搭建部署" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2/"/>
+    
+    
+      <category term="HEXO搭建博客" scheme="http://yoursite.com/tags/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
