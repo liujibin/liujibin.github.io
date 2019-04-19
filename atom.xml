@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>刘继斌的博客</title>
   
-  <subtitle>一行代码</subtitle>
+  <subtitle>一行code</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
